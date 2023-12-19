@@ -18,7 +18,7 @@ class Card: # Here the class Card is created
     pass
 
     def get_image(self): # Here we call the image 
-        return f"img/{self.value}_of_{self.suit}.png"        
+        return f"C:\\Users\\marco\\OneDrive\\Escritorio\\UNIVERSIDAD\\PROGRAMACIÓN II\\bj_project-main\\img/{self.value}_of_{self.suit}.png"
     pass
 
 class Deck: # Here we create the class deck, that it will contain the attributes suits and values
@@ -189,7 +189,8 @@ class BlackjackGUI:
         lbl.pack(side=tk.LEFT, padx=10)  # Center the last card horizontally a bit more
         
         # Deck in the middle
-        img = PhotoImage(file="img/card_back_01.png")
+        img = PhotoImage(file="C:\\Users\\marco\\OneDrive\\Escritorio\\UNIVERSIDAD\\PROGRAMACIÓN II\\bj_project-main\\img\\card_back_01.png")
+
         lbl = tk.Label(self.deck_frame, image=img, cursor="hand2")
         lbl.image = img
         lbl.pack(side=tk.TOP, padx=10)
